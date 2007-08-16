@@ -1,13 +1,13 @@
 %define name	xcompmgr
-%define version	1.1.1
-%define release	%mkrel 6
+%define version	1.1.3
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Summary:	Sample X Compositing Manager
-Source:		http://freedesktop.org/xapps/release/%{name}-%{version}.tar.bz2
-URL:		http://freedesktop.org/Software/xapps
+Source:		http://xapps.freedesktop.org/release/%{name}-%{version}.tar.gz
+URL:		http://xapps.freedesktop.org
 License:	GPL
 Group:		System/X11
 BuildRequires:  X11-devel
@@ -32,6 +32,6 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc COPYING ChangeLog INSTALL
+%doc ChangeLog
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
