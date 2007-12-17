@@ -11,7 +11,6 @@ URL:		http://xapps.freedesktop.org
 License:	GPL
 Group:		System/X11
 BuildRequires:  X11-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Sample X Compositing Manager.
