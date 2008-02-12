@@ -1,15 +1,16 @@
-Name:		xcompmgr
-Version:	1.1.3
-Release:	%mkrel 2
+%define name   xcompmgr
+%define version        1.1.3
+%define release        %mkrel 3
+
+Name:		%{name}
+Version:	%{version}
+Release:	%{release}
 Summary:	Sample X Compositing Manager
 Source:		http://xapps.freedesktop.org/release/%{name}-%{version}.tar.gz
 URL:		http://xapps.freedesktop.org
 License:	MIT
 Group:		System/X11
-BuildRequires: x11-util-macros		>= 1.1.5
-BuildRequires: libxdamage-devel		>= 1.1.1
-BuildRequires: libxcomposite-devel	>= 0.4.0
-BuildRequires: libxrender-devel		>= 0.9.4
+BuildRequires:  X11-devel
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
@@ -20,7 +21,7 @@ Sample X Compositing Manager.
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
