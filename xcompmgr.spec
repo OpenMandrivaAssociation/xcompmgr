@@ -6,7 +6,7 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Summary:	Sample X Compositing Manager
-Source:		http://xapps.freedesktop.org/release/%{name}-%{version}.tar.gz
+Source:		http://xapps.freedesktop.org/release/%{name}-%{version}.tar.bz2
 URL:		http://xapps.freedesktop.org
 License:	MIT
 Group:		System/X11
