@@ -1,6 +1,6 @@
 %define name   xcompmgr
-%define version        1.1.4
-%define release        %mkrel 3
+%define version        1.1.5
+%define release        %mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -10,7 +10,11 @@ Source:		http://xapps.freedesktop.org/release/%{name}-%{version}.tar.bz2
 URL:		http://xapps.freedesktop.org
 License:	MIT
 Group:		System/X11
-BuildRequires:  X11-devel
+BuildRequires:  libxcomposite-devel
+BuildRequires:  libxfixes-devel
+BuildRequires:  libxdamage-devel
+BuildRequires:  libxrender-devel
+BuildRequires:  libxext-devel
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
