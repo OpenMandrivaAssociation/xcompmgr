@@ -1,6 +1,6 @@
 %define name   xcompmgr
 %define version        1.1.6
-%define release        1
+%define release        2
 
 Name:		%{name}
 Version:	%{version}
