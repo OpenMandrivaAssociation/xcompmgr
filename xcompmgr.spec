@@ -1,29 +1,29 @@
 Name:		xcompmgr
-Version:	1.1.7
+Version:	1.1.8
 Release:	1
 Summary:	Sample X Compositing Manager
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 URL:		http://xapps.freedesktop.org
 License:	MIT
 Group:		System/X11
-BuildRequires:  libxcomposite-devel
-BuildRequires:  libxfixes-devel
-BuildRequires:  libxdamage-devel
-BuildRequires:  libxrender-devel
-BuildRequires:  libxext-devel
+BuildRequires:	pkgconfig(xcomposite)
+BuildRequires:	pkgconfig(xfixes)
+BuildRequires:	pkgconfig(xdamage)
+BuildRequires:	pkgconfig(xrender)
+BuildRequires:	pkgconfig(xext)
 
 %description
 Sample X Compositing Manager.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall
+%make_install
 
 %files
 %doc ChangeLog
