@@ -11,6 +11,7 @@ BuildRequires:	pkgconfig(xfixes)
 BuildRequires:	pkgconfig(xdamage)
 BuildRequires:	pkgconfig(xrender)
 BuildRequires:	pkgconfig(xext)
+BuildRequires:	pkgconfig(xorg-macros)
 
 %description
 Sample X Compositing Manager.
