@@ -2,7 +2,7 @@ Name:		xcompmgr
 Version:	1.1.9
 Release:	1
 Summary:	Sample X Compositing Manager
-Source0:	https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 URL:		https://xapps.freedesktop.org
 License:	MIT
 Group:		System/X11
